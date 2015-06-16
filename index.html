@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fun With Spline Curves</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+  <div>
+    <button id="speedUpButton" type="button"">Speed up</button>
+    <button id="speedDownButton" type="button"">Speed down</button>
+    <button id="tensionUpButton" type="button"">Tension up</button>
+    <button id="tensionDownButton" type="button"">Tension down</button>
+  </div>
+  <div>
+    <button id="renderModeButton" type="button"">Toggle render mode</button>
+    <button id="pauseButton" type="button"">Pause animation</button>
+  </div>
+ <ul>
+  <li><font face = "arial">Click 4 random points on the canvas to create a Cardinal Spline between your 2nd and 3rd points!</font></li>
+  <li><font face = "arial">Continue clicking around to create more and more fun curves</font></li>
+  <li> <font face = "arial">Control the "tightness" of your curves using the Tension buttons</font></li>
+  <li><font face = "arial">Click "Toggle render mode" after making a curve to have a (rotating) object traverse its path</font></li>
+  <li><font face = "arial">You can also pause, speed up, or slow down the object</font></li>
+  <li><font face = "arial">Have fun! :)</font></li>
+</ul> 
+    <script src="webgl-utils.js"></script>
+    <script src="webgl-debug.js"></script>
+    <script src="cuon-utils.js"></script>
+    <script src="cuon-matrix.js"></script>
+    <script src="common.js"></script>
+    <script src="Spline_Curves.js"></script>
+  </body>
+</html>
